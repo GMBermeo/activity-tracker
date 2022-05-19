@@ -23,7 +23,7 @@ export default defineComponent({
 });
 </script>
 <style>
-.display {
+.formulario .display {
   color: var(--texto-primario);
 }
 </style>

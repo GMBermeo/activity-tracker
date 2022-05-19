@@ -8,7 +8,7 @@
     </div>
     <div class="column is-three-quarter conteudo">
       <!-- Aqui vai a view correspondente -->
-      <router-view></router-view>
+      <router-view />
     </div>
   </main>
 </template>
@@ -39,18 +39,21 @@ export default defineComponent({
 main {
   --bg-primario: #fff;
   --text-primario: #333;
+  min-height: 100vh;
 }
 
 main.modo-escuro {
   --bg-primario: #2b2d42;
   --texto-primario: #ddd;
+  background-color: var(--bg-primario);
 }
 
 .lista {
   padding: 1.25rem;
 }
 
-.conteudo {
-  background-color: var(--bg-primario);
+.title,
+.label {
+  color: var(--texto-primario);
 }
 </style>

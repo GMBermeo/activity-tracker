@@ -1,8 +1,8 @@
 <template>
   <section class="projetos">
     <h1 class="title">Projetos</h1>
-    <form @submit.prevent="salvar">
-      <div class="field">
+    <form @submit.prevent="salvar" class="columns is-align-items-end">
+      <div class="column is-9">
         <label for="nomeDoProjeto" class="label"> Nome do Projeto </label>
         <input
           type="text"
@@ -11,8 +11,8 @@
           id="nomeDoProjeto"
         />
       </div>
-      <div class="field">
-        <button class="button" type="submit">Salvar</button>
+      <div class="column is-3">
+        <button class="button is-fullwidth" type="submit">Salvar</button>
       </div>
     </form>
     <table class="table is-fullwidth">
@@ -33,26 +33,28 @@
 </template>
 
 <script lang="ts">
-import iProjeto from "@/interfaces/iProjeto";
-import { defineComponent } from "vue";
+import { computed, defineComponent } from "vue";
+import { useStore } from "@/store";
 
 export default defineComponent({
   name: "Projetos",
   data() {
     return {
       nomeDoProjeto: "",
-      projetos: [] as iProjeto[],
     };
   },
   methods: {
     salvar() {
-      const projeto: iProjeto = {
-        nome: this.nomeDoProjeto,
-        id: new Date().toISOString().replace(/[-:.]/g, ""),
-      };
-      this.projetos.push(projeto);
+      this.store.commit("ADICIONA_PROJETO", this.nomeDoProjeto);
       this.nomeDoProjeto = "";
     },
+  },
+  setup() {
+    const store = useStore();
+    return {
+      store,
+      projetos: computed(() => store.state.projetos),
+    };
   },
 });
 </script>
@@ -60,5 +62,11 @@ export default defineComponent({
 <style scoped>
 .projetos {
   padding: 1.25rem;
+}
+
+.table,
+th {
+  color: var(--texto-primario) !important;
+  background: var(--bg-primario) !important;
 }
 </style>
