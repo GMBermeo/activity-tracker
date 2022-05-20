@@ -1,13 +1,21 @@
 <template>
   <div class="is-flex is-align-items-center is-justify-content-space-between">
     <Cronometro :tempoEmSegundos="tempoEmSegundos" />
-    <button class="button" @click="iniciar" :disabled="cronometroRodando">
+    <button
+      class="button is-primary"
+      @click="iniciar"
+      :disabled="cronometroRodando"
+    >
       <span class="icon">
         <i class="fas fa-play"></i>
       </span>
       <span>play</span>
     </button>
-    <button class="button" @click="finalizar" :disabled="!cronometroRodando">
+    <button
+      class="button is-danger"
+      @click="finalizar"
+      :disabled="!cronometroRodando"
+    >
       <span class="icon">
         <i class="fas fa-stop"></i>
       </span>

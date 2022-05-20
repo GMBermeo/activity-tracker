@@ -56,4 +56,8 @@ main.modo-escuro {
 .label {
   color: var(--texto-primario);
 }
+
+.button {
+  font-weight: bold;
+}
 </style>

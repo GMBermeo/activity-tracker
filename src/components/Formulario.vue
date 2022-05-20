@@ -9,13 +9,13 @@
       >
         <input
           type="text"
-          class="input"
+          class="input is-rounded"
           placeholder="Qual tarefa você deseja iniciar?"
           v-model="descricao"
         />
       </div>
       <div class="column is-3">
-        <div class="select">
+        <div class="select is-rounded">
           <select v-model="idProjeto">
             <option value="">Selecione o projeto</option>
             <option
