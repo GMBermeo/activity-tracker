@@ -3,11 +3,22 @@
 Activity Tracker for the Vue course from Alura.
 
 ## tech used
+<<<<<<< Updated upstream
 ![Vue.js](https://img.shields.io/badge/vuejs-black.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D)
 ![TypeScript](https://img.shields.io/badge/typescript-black.svg?style=for-the-badge&logo=typescript&logoColor=#3178C6)
 ![Bulma CSS](https://img.shields.io/badge/bulma-black?style=for-the-badge&logo=bulma&logoColor=#00D1B2)
 ![HTML 5](https://img.shields.io/badge/html5-black?style=for-the-badge&logo=html5&logoColor=#E34F26)
 ![Deployed on Vercel](https://img.shields.io/badge/vercel-black?style=for-the-badge&logo=vercel&logoColor=white)
+=======
+<p align="justify">
+![Vue.js](https://img.shields.io/badge/vuejs-%230d1117.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D)
+![TypeScript](https://img.shields.io/badge/typescript-%230d1117.svg?style=for-the-badge&logo=typescript&logoColor=#3178C6)
+![Bulma CSS](https://img.shields.io/badge/bulma-%230d1117?style=for-the-badge&logo=bulma&logoColor=#00D1B2)
+![HTML 5](https://img.shields.io/badge/html5-%230d1117?style=for-the-badge&logo=html5&logoColor=#E34F26)
+![Visual Studio Code](https://img.shields.io/badge/vscode-%230d1117?style=for-the-badge&logo=visualstudiocode&logoColor=#007ACC)
+![Deployed on Vercel](https://img.shields.io/badge/vercel-%230d1117?style=for-the-badge&logo=vercel&logoColor=white)
+</p>
+>>>>>>> Stashed changes
 
 ## project setup
 ```
